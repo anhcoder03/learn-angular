@@ -1,0 +1,33 @@
+<div>
+  <div class="flex">
+    <div class="w-full max-w-[250px] bg-slate-100 min-h-screen">
+      <div class="flex flex-col gap-y-10">
+        <div class="flex items-center justify-center">
+          <a routerLink="">
+            <img
+              class="w-full h-[100px]"
+              src="https://angular.io/assets/images/logos/angular/angular_solidBlack.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div class="flex flex-col">
+          <div class="px-2 py-4 hover:bg-white" routerLinkActive="active-link">
+            <a routerLink="dashboard" class="block">Dashboard</a>
+          </div>
+          <div class="px-2 py-4 hover:bg-white" routerLinkActive="active-link">
+            <a routerLink="product" class="block">Product Manager</a>
+          </div>
+          <div class="px-2 py-4 hover:bg-white">
+            <a routerLink="user" routerLinkActive="active-link" class="block"
+              >User Manager</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1">
+      <router-outlet />
+    </div>
+  </div>
+</div>

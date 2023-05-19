@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 200,
+      "img": "https://picsum.photos/200/200"
+    },
+    {
+      "id": "NVF37zO",
+      "name": "Doraemon",
+      "price": 32323,
+      "img": "https://image.tmdb.org/t/p/original//ko6AOxIyQvIexLv26DozM0FULJV.jpg"
+    },
+    {
+      "id": "Hsx5OrK",
+      "name": "Ai phôn 15 bờ rồ mắc",
+      "price": 1000,
+      "img": "https://alofone.vn/wp-content/uploads/2019/06/nokia-1280-cu.webp"
+    }
+  ]
+}
