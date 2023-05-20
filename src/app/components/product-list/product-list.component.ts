@@ -19,11 +19,6 @@ export class ProductListComponent {
       this.products = data;
     });
   }
-  // @Input() products: IProduct[] = [];
-  // @Output() onRemove = new EventEmitter<any>();
-  // removeItem(id: any) {
-  //   this.onRemove.emit(id);
-  // }
   removeItem(id: any) {
     const confirm = window.confirm('Bạn có muốn xoá không?');
     if (confirm) {

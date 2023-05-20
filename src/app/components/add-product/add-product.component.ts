@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -8,12 +9,13 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class AddProductComponent {
   productData: any = { id: '', name: '', price: null, img: null };
-  constructor(private productSevice: ProductService) {}
+  constructor(private productSevice: ProductService, private router: Router) {}
   submitForm(event: Event) {
     event.preventDefault();
     this.productSevice.addProduct(this.productData).subscribe(
       (response) => {
-        console.log('Data posted successfully', response);
+        alert('Data posted successfully');
+        this.router.navigateByUrl('/admin/product');
       },
       (error) => {
         console.error('Error posting data', error);

@@ -15,6 +15,8 @@ import { ProductManagerComponent } from './pages/product-manager/product-manager
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { AddProductComponent } from './components/add-product/add-product.compon
     ProductManagerComponent,
     PageNotFoundComponent,
     AddProductComponent,
+    ProductDetailComponent,
+    UpdateProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

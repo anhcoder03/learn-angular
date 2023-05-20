@@ -16,9 +16,9 @@ export class SliderComponent implements AfterViewInit {
     const swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       centeredSlides: true,
+      loop: true,
       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+        delay: 3000, // Thời gian chờ giữa các slide (3 giây)
       },
       pagination: {
         el: '.swiper-pagination',

@@ -1,91 +1,24 @@
-<div class="container py-8 mx-auto mt-16 max-w-7xl">
-  <h1 class="mb-4 text-2xl font-bold">Danh sách sản phẩm</h1>
-  <ul
-    class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-  >
-    <li class="p-4 bg-white shadow-md">
-      <img
-        src="https://images.unsplash.com/photo-1683582411325-b87240c5b530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-        alt="Product 1"
-        class="w-full"
-      />
-      <h2 class="mt-2 text-xl font-bold">Product 1</h2>
-      <p class="text-gray-600">Mô tả sản phẩm 1</p>
-      <button
-        class="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Thêm vào giỏ hàng
-      </button>
-    </li>
-    <li class="p-4 bg-white shadow-md">
-      <img
-        src="https://images.unsplash.com/photo-1683582411325-b87240c5b530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80g"
-        alt="Product 2"
-        class="w-full"
-      />
-      <h2 class="mt-2 text-xl font-bold">Product 2</h2>
-      <p class="text-gray-600">Mô tả sản phẩm 2</p>
-      <button
-        class="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Thêm vào giỏ hàng
-      </button>
-    </li>
-    <li class="p-4 bg-white shadow-md">
-      <img
-        src="https://images.unsplash.com/photo-1683582411325-b87240c5b530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-        alt="Product 1"
-        class="w-full"
-      />
-      <h2 class="mt-2 text-xl font-bold">Product 1</h2>
-      <p class="text-gray-600">Mô tả sản phẩm 1</p>
-      <button
-        class="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Thêm vào giỏ hàng
-      </button>
-    </li>
-    <li class="p-4 bg-white shadow-md">
-      <img
-        src="https://images.unsplash.com/photo-1683582411325-b87240c5b530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80g"
-        alt="Product 2"
-        class="w-full"
-      />
-      <h2 class="mt-2 text-xl font-bold">Product 2</h2>
-      <p class="text-gray-600">Mô tả sản phẩm 2</p>
-      <button
-        class="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Thêm vào giỏ hàng
-      </button>
-    </li>
-    <li class="p-4 bg-white shadow-md">
-      <img
-        src="https://images.unsplash.com/photo-1683582411325-b87240c5b530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-        alt="Product 1"
-        class="w-full"
-      />
-      <h2 class="mt-2 text-xl font-bold">Product 1</h2>
-      <p class="text-gray-600">Mô tả sản phẩm 1</p>
-      <button
-        class="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Thêm vào giỏ hàng
-      </button>
-    </li>
-    <li class="p-4 bg-white shadow-md">
-      <img
-        src="https://images.unsplash.com/photo-1683582411325-b87240c5b530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80g"
-        alt="Product 2"
-        class="w-full"
-      />
-      <h2 class="mt-2 text-xl font-bold">Product 2</h2>
-      <p class="text-gray-600">Mô tả sản phẩm 2</p>
-      <button
-        class="px-4 py-2 mt-4 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-      >
-        Thêm vào giỏ hàng
-      </button>
-    </li>
-  </ul>
+<div class="container">
+  <div class="my-10">
+    <h1 class="text-3xl font-bold">DANH SÁCH SẢN PHẨM</h1>
+  </div>
+  <div class="grid w-full grid-cols-4 gap-5">
+    <div class="flex flex-col w-full" *ngFor="let product of products">
+      <div class="">
+        <img
+          src="{{ product.img }}"
+          alt=""
+          class="max-w-[250px] max-h-[200px] h-full w-full object-cover"
+        />
+      </div>
+      <div class="flex flex-col gap-y-3">
+        <a
+          [routerLink]="['/product-detail', product.id]"
+          class="text-2xl font-semibold"
+          >{{ product.name }}</a
+        >
+        <span class="font-medium text-red-400">{{ product.price }}</span>
+      </div>
+    </div>
+  </div>
 </div>

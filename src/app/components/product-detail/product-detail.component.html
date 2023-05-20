@@ -1,0 +1,40 @@
+<div class="container mt-24">
+  <div class="flex justify-between">
+    <div class="flex items-center justify-center w-1/2">
+      <img
+        src="{{ productData.img }}"
+        alt=""
+        class="max-w-[400px] max-h-[400px] w-full h-full object-cover"
+      />
+    </div>
+    <div class="flex flex-col w-1/2">
+      <h1>{{ productData.name }}</h1>
+      <span>{{ productData.price }}</span>
+    </div>
+  </div>
+  <div class="my-10">
+    <h1 class="text-2xl font-bold">Sản phẩm liên quan</h1>
+    <div class="grid w-full grid-cols-4 gap-5">
+      <div
+        class="flex flex-col w-full"
+        *ngFor="let product of productByCategory"
+      >
+        <div class="">
+          <img
+            src="{{ product.img }}"
+            alt=""
+            class="max-w-[250px] max-h-[200px] h-full w-full object-cover"
+          />
+        </div>
+        <div class="flex flex-col gap-y-3">
+          <a
+            [routerLink]="['/product-detail', product.id]"
+            class="text-2xl font-semibold"
+            >{{ product.name }}</a
+          >
+          <span class="font-medium text-red-400">{{ product.price }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

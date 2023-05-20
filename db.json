@@ -1,22 +1,56 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Product 1",
-      "price": 200,
-      "img": "https://picsum.photos/200/200"
+      "id": "ZD1cb6S",
+      "name": "Gái ngon",
+      "price": 300,
+      "img": "https://images.unsplash.com/photo-1684340459162-e3a3d6d9dbc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "categoryId": 1
     },
     {
-      "id": "NVF37zO",
-      "name": "Doraemon",
-      "price": 32323,
-      "img": "https://image.tmdb.org/t/p/original//ko6AOxIyQvIexLv26DozM0FULJV.jpg"
-    },
-    {
-      "id": "Hsx5OrK",
-      "name": "Ai phôn 15 bờ rồ mắc",
+      "id": "AIyi7LU",
+      "name": "Gái mới lớn",
       "price": 1000,
-      "img": "https://alofone.vn/wp-content/uploads/2019/06/nokia-1280-cu.webp"
+      "img": "https://images.unsplash.com/photo-1586605798723-45275561392b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZyVDMyVBMWklMjB4aW5ofGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      "categoryId": 2
+    },
+    {
+      "id": "itibLwP",
+      "name": "Gái sinh viên",
+      "price": 1500,
+      "img": "https://images.unsplash.com/photo-1651454424367-8778ee134f3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZyVDMyVBMWklMjB4aW5ofGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      "categoryId": 1
+    },
+    {
+      "id": "9mAc2DE",
+      "name": "Gái cấp 3",
+      "price": 3000,
+      "img": "https://images.unsplash.com/photo-1600185340571-b91ca9a8adea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGclQzMlQTFpJTIweGluaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "categoryId": 1
+    },
+    {
+      "id": "pSWDEv3",
+      "name": "Gái xinh ",
+      "price": 500,
+      "img": "https://images.unsplash.com/photo-1615383899808-21f7758287d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGclQzMlQTFpJTIweGluaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "categoryId": 2
+    },
+    {
+      "id": "LyRAQ2Z",
+      "name": "Giáo viên",
+      "price": 800,
+      "img": "https://images.unsplash.com/photo-1537190301866-32cec11fb75d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+      "categoryId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Gái gái việt"
+    },
+    {
+      "id": 2,
+      "categoryName": "Gái gái trung"
     }
   ]
 }

@@ -8,6 +8,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProductManagerComponent } from './pages/product-manager/product-manager.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AddProductComponent } from './components/add-product/add-product.component';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,7 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'product', component: ProductComponent },
+      { path: 'product-detail/:id', component: ProductDetailComponent },
     ],
   },
   {
@@ -26,6 +29,8 @@ const routes: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'product', component: ProductManagerComponent },
       { path: 'addProduct', component: AddProductComponent },
+      { path: 'updateProduct/:id', component: UpdateProductComponent },
+      { path: 'product/:id/edit', component: UpdateProductComponent },
     ],
   },
   { path: '**', component: PageNotFoundComponent },
